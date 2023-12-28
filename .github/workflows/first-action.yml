@@ -12,3 +12,9 @@ jobs:
           echo "test, and deploy your project."
       - name: Test2
         run: ls -ltr
+
+      - name: Test3
+        run: ls -ltr /
+        
+      - name: Test4
+        run: ls -ltr /etc/                
