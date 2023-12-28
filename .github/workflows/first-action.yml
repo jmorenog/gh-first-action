@@ -1,17 +1,10 @@
 name: First Workflow
 on: workflow_dispatch
-
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      
-      - name: Run a one-line script
-        run: echo "Hello, world!"
-        
-      - name: Run a multi-line script
-        run: |
-          echo "Add other actions to build,"
-          echo "test, and deploy your project."
-      - name: Test2
-      - run: ls -ltr
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
